@@ -244,7 +244,7 @@ header {
 }
 
 main {
-     min-height: calc(65vh - 20px);
+     min-height: calc(65vh - 40px);
      color: #eee;
      display: flex;
      align-items: center;
@@ -337,4 +337,70 @@ h1 {
 p,
 .between {
      font-size: 3rem;
+}
+footer p {
+     text-align: center;
+     font-size: 2rem;
+}
+
+@media (max-width: 794px) {
+     body {
+          overflow: hidden;
+     }
+     .between,
+     h1 {
+          display: none;
+     }
+     header {
+          border: 0;
+     }
+     .again {
+          top: 1rem;
+          height: 7rem;
+     }
+     .btn {
+          padding: 1rem 0rem;
+     }
+     .guess {
+          position: absolute;
+          top: 93px;
+          padding: 0.5rem;
+     }
+     .check {
+          /* border: 2px solid red; */
+          position: absolute;
+          top: 31rem;
+          right: 6px;
+     }
+     .message {
+          position: absolute;
+          top: 14rem;
+          left: 1rem;
+          font-size: 2.5rem;
+     }
+
+     .number {
+          font-size: 4rem;
+          padding: 1rem 0rem;
+          bottom: 152px;
+          left: 70%;
+          transform: translate(-48%, -43%);
+          width: 12rem;
+     }
+
+     main {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+     }
+
+     .right {
+          /* border: 2px solid green; */
+          display: flex;
+          width: 100%;
+          margin: 0;
+          position: absolute;
+          top: 18rem;
+          font-size: 1rem;
+     }
 }
