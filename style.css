@@ -218,7 +218,6 @@ section {
 html {
      font-size: 62.5%;
 }
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
 * {
      margin: 0;
@@ -232,21 +231,20 @@ html {
 }
 
 body {
-     font-family: 'Press Start 2P', sans-serif;
+     font-family: sans-serif;
      color: #eee;
      background-color: #222;
      /* background-color: #60b347; */
 }
 
-/* LAYOUT */
 header {
      position: relative;
-     height: 35vh;
+     min-height: 35vh;
      border-bottom: 7px solid #eee;
 }
 
 main {
-     height: 65vh;
+     min-height: calc(65vh - 20px);
      color: #eee;
      display: flex;
      align-items: center;
@@ -265,7 +263,6 @@ main {
      font-size: 2rem;
 }
 
-/* ELEMENTS STYLE */
 h1 {
      font-size: 4rem;
      text-align: center;
@@ -336,4 +333,8 @@ h1 {
 
 .label-score {
      margin-bottom: 2rem;
+}
+p,
+.between {
+     font-size: 3rem;
 }
